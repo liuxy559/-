@@ -7,36 +7,19 @@ This repository contains the code and experimental framework for the paper:
 >   
 The code implements systematic feature ablation experiments (G1–G4) to quantify the contribution and redundancy of physical and grain‑size parameters in predicting sediment sound speed (100 kHz compressional wave velocity) using machine learning regression models (ElasticNet, SVR, Random Forest, XGBoost). All experiments are performed on a sediment dataset collected from the South China Sea
 
-## Repository Structure
-
-```text
-- data/
-  - sediment_data.xlsx
-- src/
-  - data_loader.py
-  - feature_sets.py
-  - models.py
-  - tuner.py
-  - evaluate.py
-  - run_experiments.py
-- results/
-  - config.yaml
-  - requirements.txt
-- LICENSE
-- README.md
-
-# Put your dataset here (see Data Preparation)
-# Example filename (actual name may differ)
-
-# Loading and preprocessing (outlier detection, split)
-# Definition of all feature groups G1-G4
-# Wrappers for ElasticNet, SVR, RF, XGBoost
-# Optuna hyperparameter optimization with CV
-# Metrics (R², RMSE, MAE) and plotting
-# Main script to execute all experiments
-# Output directory for metrics, figures, and tables
-# Global configuration (data path, random seed, etc.)
-# Python dependencies with exact versions
-
-# This file
-```
+## 📁 Repository Structure
+.
+├── data/                         # Put your dataset here (see Data Preparation)
+│   └── sediment_data.xlsx        # Example filename (actual name may differ)
+├── src/
+│   ├── data_loader.py            # Loading and preprocessing (outlier detection, split)
+│   ├── feature_sets.py           # Definition of all feature groups G1–G4
+│   ├── models.py                 # Wrappers for ElasticNet, SVR, RF, XGBoost
+│   ├── tuner.py                  # Optuna hyperparameter optimization with CV
+│   ├── evaluate.py               # Metrics (R², RMSE, MAE) and plotting
+│   └── run_experiments.py        # Main script to execute all experiments
+├── results/                      # Output directory for metrics, figures, and tables
+├── config.yaml                   # Global configuration (data path, random seed, etc.)
+├── requirements.txt              # Python dependencies with exact versions
+├── LICENSE
+└── README.md                     # This file
