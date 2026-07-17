@@ -8,7 +8,7 @@ This repository contains the code and experimental framework for the paper:
 The code implements systematic feature ablation experiments (G1–G4) to quantify the contribution and redundancy of physical and grain‑size parameters in predicting sediment sound speed (100 kHz compressional wave velocity) using machine learning regression models (ElasticNet, SVR, Random Forest, XGBoost). All experiments are performed on a sediment dataset collected from the South China Sea
 
 ## 📁 Repository Structure
-.
+.<br>
 ├── data/                         # Put your dataset here (see Data Preparation)<br>
 │   └── sediment_data.xlsx        # Example filename (actual name may differ)<br>
 ├── src/<br>
