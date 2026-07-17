@@ -8,18 +8,18 @@ This repository contains the code and experimental framework for the paper:
 The code implements systematic feature ablation experiments (G1–G4) to quantify the contribution and redundancy of physical and grain‑size parameters in predicting sediment sound speed (100 kHz compressional wave velocity) using machine learning regression models (ElasticNet, SVR, Random Forest, XGBoost). All experiments are performed on a sediment dataset collected from the South China Sea
 
 ## 📁 Repository Structure
-.<br>
-├── data/                         # Put your dataset here (see Data Preparation)<br>
-│   └── sediment_data.xlsx        # Example filename (actual name may differ)<br>
-├── src/<br>
-│   ├── data_loader.py            # Loading and preprocessing (outlier detection, split)<br>
-│   ├── feature_sets.py           # Definition of all feature groups G1–G4<br>
-│   ├── models.py                 # Wrappers for ElasticNet, SVR, RF, XGBoost<br>
-│   ├── tuner.py                  # Optuna hyperparameter optimization with CV<br>
-│   ├── evaluate.py               # Metrics (R², RMSE, MAE) and plotting<br>
-│   └── run_experiments.py        # Main script to execute all experiments<br>
-├── results/                      # Output directory for metrics, figures, and tables<br>
-├── config.yaml                   # Global configuration (data path, random seed, etc.)<br>
-├── requirements.txt              # Python dependencies with exact versions<br>
-├── LICENSE<br>
-└── README.md                     # This file<br>
+```text
+data/                      # Put your dataset here (see Data Preparation)
+sediment_data.xlsx         # Example filename (actual name may differ)
+src/
+data_loader.py             # Loading and preprocessing (outlier detection, split)
+feature_sets.py            # Definition of all feature groups G1–G4
+models.py                  # Wrappers for ElasticNet, SVR, RF, XGBoost
+tuner.py                   # Optuna hyperparameter optimization with CV
+evaluate.py                # Metrics (\(R^2\), RMSE, MAE) and plotting
+run_experiments.py         # Main script to execute all experiments
+results/                   # Output directory for metrics, figures, and tables
+config.yaml                # Global configuration (data path, random seed, etc.)
+requirements.txt           # Python dependencies with exact versions
+LICENSE
+README.md                  # This file
