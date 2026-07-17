@@ -9,17 +9,18 @@ The code implements systematic feature ablation experiments (G1–G4) to quantif
 
 ## 📁 Repository Structure
 ```text
-data/                      # Put your dataset here (see Data Preparation)
-sediment_data.xlsx         # Example filename (actual name may differ)
-src/
-data_loader.py             # Loading and preprocessing (outlier detection, split)
-feature_sets.py            # Definition of all feature groups G1–G4
-models.py                  # Wrappers for ElasticNet, SVR, RF, XGBoost
-tuner.py                   # Optuna hyperparameter optimization with CV
-evaluate.py                # Metrics (\(R^2\), RMSE, MAE) and plotting
-run_experiments.py         # Main script to execute all experiments
-results/                   # Output directory for metrics, figures, and tables
-config.yaml                # Global configuration (data path, random seed, etc.)
-requirements.txt           # Python dependencies with exact versions
-LICENSE
-README.md                  # This file
+├── data/                         # Put your dataset here (see Data Preparation)
+│   └── sediment_data.xlsx        # Example filename (actual name may differ)
+├── src/
+│   ├── data_loader.py            # Loading and preprocessing (outlier detection, split)
+│   ├── feature_sets.py           # Definition of all feature groups G1–G4
+│   ├── models.py                 # Wrappers for ElasticNet, SVR, RF, XGBoost
+│   ├── tuner.py                  # Optuna hyperparameter optimization with CV
+│   ├── evaluate.py               # Metrics (R², RMSE, MAE) and plotting
+│   └── run_experiments.py        # Main script to execute all experiments
+├── results/                      # Output directory for metrics, figures, and tables
+├── config.yaml                   # Global configuration (data path, random seed, etc.)
+├── requirements.txt              # Python dependencies with exact versions
+├── LICENSE
+└── README.md                     # This file
+```
