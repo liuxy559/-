@@ -1,7 +1,7 @@
 # Sediment Sound Speed Prediction – Feature Ablation Study
 This repository contains the code and experimental framework for the paper:
 
-> - **Mo, D., Hou, Z., Huang, J., Dong, F., Xiao, P., Xu, L., Zhao, B., & Li, Z.**  
+> - **Mo, D., Hou, Z., Liu, X., Huang, J., Dong, F., Xiao, P., Xu, L., Zhao, B., & Li, Z.**  
 >   *Sediment sound speed prediction: feature ablation and structural information analysis based on machine learning*  
 >   *(Manuscript under review)*
 >   
